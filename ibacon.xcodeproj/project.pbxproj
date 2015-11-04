@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CD3DAF11BEA51510028282C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD3DAF01BEA51510028282C /* AppDelegate.swift */; };
+		1CD3DAF31BEA51510028282C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD3DAF21BEA51510028282C /* ViewController.swift */; };
+		1CD3DAF61BEA51510028282C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CD3DAF41BEA51510028282C /* Main.storyboard */; };
+		1CD3DAF81BEA51510028282C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CD3DAF71BEA51510028282C /* Assets.xcassets */; };
+		1CD3DAFB1BEA51510028282C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CD3DAF91BEA51510028282C /* LaunchScreen.storyboard */; };
+		1CD3DB061BEA51510028282C /* ibaconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD3DB051BEA51510028282C /* ibaconTests.swift */; };
+		1CD3DB111BEA51510028282C /* ibaconUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD3DB101BEA51510028282C /* ibaconUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1CD3DB021BEA51510028282C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CD3DAE51BEA51500028282C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CD3DAEC1BEA51500028282C;
+			remoteInfo = ibacon;
+		};
+		1CD3DB0D1BEA51510028282C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CD3DAE51BEA51500028282C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CD3DAEC1BEA51500028282C;
+			remoteInfo = ibacon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1CD3DAED1BEA51510028282C /* ibacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ibacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CD3DAF01BEA51510028282C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1CD3DAF21BEA51510028282C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1CD3DAF51BEA51510028282C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1CD3DAF71BEA51510028282C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1CD3DAFA1BEA51510028282C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1CD3DAFC1BEA51510028282C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CD3DB011BEA51510028282C /* ibaconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ibaconTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CD3DB051BEA51510028282C /* ibaconTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ibaconTests.swift; sourceTree = "<group>"; };
+		1CD3DB071BEA51510028282C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CD3DB0C1BEA51510028282C /* ibaconUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ibaconUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CD3DB101BEA51510028282C /* ibaconUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ibaconUITests.swift; sourceTree = "<group>"; };
+		1CD3DB121BEA51510028282C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CD3DAEA1BEA51500028282C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CD3DAFE1BEA51510028282C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CD3DB091BEA51510028282C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CD3DAE41BEA51500028282C = {
+			isa = PBXGroup;
+			children = (
+				1CD3DAEF1BEA51510028282C /* ibacon */,
+				1CD3DB041BEA51510028282C /* ibaconTests */,
+				1CD3DB0F1BEA51510028282C /* ibaconUITests */,
+				1CD3DAEE1BEA51510028282C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1CD3DAEE1BEA51510028282C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CD3DAED1BEA51510028282C /* ibacon.app */,
+				1CD3DB011BEA51510028282C /* ibaconTests.xctest */,
+				1CD3DB0C1BEA51510028282C /* ibaconUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CD3DAEF1BEA51510028282C /* ibacon */ = {
+			isa = PBXGroup;
+			children = (
+				1CD3DAF01BEA51510028282C /* AppDelegate.swift */,
+				1CD3DAF21BEA51510028282C /* ViewController.swift */,
+				1CD3DAF41BEA51510028282C /* Main.storyboard */,
+				1CD3DAF71BEA51510028282C /* Assets.xcassets */,
+				1CD3DAF91BEA51510028282C /* LaunchScreen.storyboard */,
+				1CD3DAFC1BEA51510028282C /* Info.plist */,
+			);
+			path = ibacon;
+			sourceTree = "<group>";
+		};
+		1CD3DB041BEA51510028282C /* ibaconTests */ = {
+			isa = PBXGroup;
+			children = (
+				1CD3DB051BEA51510028282C /* ibaconTests.swift */,
+				1CD3DB071BEA51510028282C /* Info.plist */,
+			);
+			path = ibaconTests;
+			sourceTree = "<group>";
+		};
+		1CD3DB0F1BEA51510028282C /* ibaconUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1CD3DB101BEA51510028282C /* ibaconUITests.swift */,
+				1CD3DB121BEA51510028282C /* Info.plist */,
+			);
+			path = ibaconUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1CD3DAEC1BEA51500028282C /* ibacon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CD3DB151BEA51510028282C /* Build configuration list for PBXNativeTarget "ibacon" */;
+			buildPhases = (
+				1CD3DAE91BEA51500028282C /* Sources */,
+				1CD3DAEA1BEA51500028282C /* Frameworks */,
+				1CD3DAEB1BEA51500028282C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ibacon;
+			productName = ibacon;
+			productReference = 1CD3DAED1BEA51510028282C /* ibacon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1CD3DB001BEA51510028282C /* ibaconTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CD3DB181BEA51510028282C /* Build configuration list for PBXNativeTarget "ibaconTests" */;
+			buildPhases = (
+				1CD3DAFD1BEA51510028282C /* Sources */,
+				1CD3DAFE1BEA51510028282C /* Frameworks */,
+				1CD3DAFF1BEA51510028282C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CD3DB031BEA51510028282C /* PBXTargetDependency */,
+			);
+			name = ibaconTests;
+			productName = ibaconTests;
+			productReference = 1CD3DB011BEA51510028282C /* ibaconTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1CD3DB0B1BEA51510028282C /* ibaconUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CD3DB1B1BEA51510028282C /* Build configuration list for PBXNativeTarget "ibaconUITests" */;
+			buildPhases = (
+				1CD3DB081BEA51510028282C /* Sources */,
+				1CD3DB091BEA51510028282C /* Frameworks */,
+				1CD3DB0A1BEA51510028282C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CD3DB0E1BEA51510028282C /* PBXTargetDependency */,
+			);
+			name = ibaconUITests;
+			productName = ibaconUITests;
+			productReference = 1CD3DB0C1BEA51510028282C /* ibaconUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1CD3DAE51BEA51500028282C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Maximilian Fischer";
+				TargetAttributes = {
+					1CD3DAEC1BEA51500028282C = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 3SG9SH94HQ;
+					};
+					1CD3DB001BEA51510028282C = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 3SG9SH94HQ;
+						TestTargetID = 1CD3DAEC1BEA51500028282C;
+					};
+					1CD3DB0B1BEA51510028282C = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 3SG9SH94HQ;
+						TestTargetID = 1CD3DAEC1BEA51500028282C;
+					};
+				};
+			};
+			buildConfigurationList = 1CD3DAE81BEA51500028282C /* Build configuration list for PBXProject "ibacon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1CD3DAE41BEA51500028282C;
+			productRefGroup = 1CD3DAEE1BEA51510028282C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CD3DAEC1BEA51500028282C /* ibacon */,
+				1CD3DB001BEA51510028282C /* ibaconTests */,
+				1CD3DB0B1BEA51510028282C /* ibaconUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1CD3DAEB1BEA51500028282C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CD3DAFB1BEA51510028282C /* LaunchScreen.storyboard in Resources */,
+				1CD3DAF81BEA51510028282C /* Assets.xcassets in Resources */,
+				1CD3DAF61BEA51510028282C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CD3DAFF1BEA51510028282C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CD3DB0A1BEA51510028282C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CD3DAE91BEA51500028282C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CD3DAF31BEA51510028282C /* ViewController.swift in Sources */,
+				1CD3DAF11BEA51510028282C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CD3DAFD1BEA51510028282C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CD3DB061BEA51510028282C /* ibaconTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CD3DB081BEA51510028282C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CD3DB111BEA51510028282C /* ibaconUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1CD3DB031BEA51510028282C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CD3DAEC1BEA51500028282C /* ibacon */;
+			targetProxy = 1CD3DB021BEA51510028282C /* PBXContainerItemProxy */;
+		};
+		1CD3DB0E1BEA51510028282C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CD3DAEC1BEA51500028282C /* ibacon */;
+			targetProxy = 1CD3DB0D1BEA51510028282C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1CD3DAF41BEA51510028282C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CD3DAF51BEA51510028282C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1CD3DAF91BEA51510028282C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CD3DAFA1BEA51510028282C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1CD3DB131BEA51510028282C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1CD3DB141BEA51510028282C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1CD3DB161BEA51510028282C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ibacon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.inagile.ibacon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1CD3DB171BEA51510028282C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ibacon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.inagile.ibacon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1CD3DB191BEA51510028282C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ibaconTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.inagile.ibaconTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ibacon.app/ibacon";
+			};
+			name = Debug;
+		};
+		1CD3DB1A1BEA51510028282C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ibaconTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.inagile.ibaconTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ibacon.app/ibacon";
+			};
+			name = Release;
+		};
+		1CD3DB1C1BEA51510028282C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ibaconUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.inagile.ibaconUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ibacon;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		1CD3DB1D1BEA51510028282C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ibaconUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.inagile.ibaconUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ibacon;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CD3DAE81BEA51500028282C /* Build configuration list for PBXProject "ibacon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CD3DB131BEA51510028282C /* Debug */,
+				1CD3DB141BEA51510028282C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CD3DB151BEA51510028282C /* Build configuration list for PBXNativeTarget "ibacon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CD3DB161BEA51510028282C /* Debug */,
+				1CD3DB171BEA51510028282C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1CD3DB181BEA51510028282C /* Build configuration list for PBXNativeTarget "ibaconTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CD3DB191BEA51510028282C /* Debug */,
+				1CD3DB1A1BEA51510028282C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1CD3DB1B1BEA51510028282C /* Build configuration list for PBXNativeTarget "ibaconUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CD3DB1C1BEA51510028282C /* Debug */,
+				1CD3DB1D1BEA51510028282C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1CD3DAE51BEA51500028282C /* Project object */;
+}
