@@ -32,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
             }
             locationManager!.allowsBackgroundLocationUpdates = true
             locationManager!.delegate = self
-            locationManager!.pausesLocationUpdatesAutomatically = false
+            locationManager!.pausesLocationUpdatesAutomatically = true
             
        
 
