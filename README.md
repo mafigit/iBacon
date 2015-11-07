@@ -1,6 +1,7 @@
 # iBacon
 Sends post requests to your web api when exiting or entering a region defined by a iBeacon
 
+<img src='https://cloud.githubusercontent.com/assets/1017870/11016816/3c365d82-858c-11e5-80bb-28a58642039a.gif' width=300>
 ## Usage
 
 ### Beacon Overview
