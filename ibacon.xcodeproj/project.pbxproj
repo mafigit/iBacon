@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C8C583C1BEE31AD00A7CC60 /* AddUuidTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C583B1BEE31AD00A7CC60 /* AddUuidTableViewController.swift */; };
+		1C8C583E1BEE426200A7CC60 /* EditBeaconTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C583D1BEE426200A7CC60 /* EditBeaconTableViewController.swift */; };
+		1CCB4D5F1BEB79AD00FA7F47 /* BeaconFinderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCB4D5E1BEB79AD00FA7F47 /* BeaconFinderTableViewController.swift */; };
+		1CCB4D611BEBB71A00FA7F47 /* BeaconCounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCB4D601BEBB71A00FA7F47 /* BeaconCounterViewController.swift */; };
+		1CCB4D691BEBED5500FA7F47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CCB4D671BEBED5500FA7F47 /* Main.storyboard */; };
+		1CCB4D6D1BEBF1A100FA7F47 /* Beacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCB4D6C1BEBF1A100FA7F47 /* Beacon.swift */; };
+		1CCB4D701BEC048400FA7F47 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1CCB4D6E1BEC048400FA7F47 /* Model.xcdatamodeld */; };
 		1CD3DAF11BEA51510028282C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD3DAF01BEA51510028282C /* AppDelegate.swift */; };
 		1CD3DAF31BEA51510028282C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD3DAF21BEA51510028282C /* ViewController.swift */; };
-		1CD3DAF61BEA51510028282C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CD3DAF41BEA51510028282C /* Main.storyboard */; };
 		1CD3DAF81BEA51510028282C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CD3DAF71BEA51510028282C /* Assets.xcassets */; };
-		1CD3DAFB1BEA51510028282C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CD3DAF91BEA51510028282C /* LaunchScreen.storyboard */; };
 		1CD3DB061BEA51510028282C /* ibaconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD3DB051BEA51510028282C /* ibaconTests.swift */; };
 		1CD3DB111BEA51510028282C /* ibaconUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD3DB101BEA51510028282C /* ibaconUITests.swift */; };
 /* End PBXBuildFile section */
@@ -34,12 +39,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C8C583B1BEE31AD00A7CC60 /* AddUuidTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUuidTableViewController.swift; sourceTree = "<group>"; };
+		1C8C583D1BEE426200A7CC60 /* EditBeaconTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditBeaconTableViewController.swift; sourceTree = "<group>"; };
+		1CCB4D5E1BEB79AD00FA7F47 /* BeaconFinderTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconFinderTableViewController.swift; sourceTree = "<group>"; };
+		1CCB4D601BEBB71A00FA7F47 /* BeaconCounterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconCounterViewController.swift; sourceTree = "<group>"; };
+		1CCB4D681BEBED5500FA7F47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1CCB4D6C1BEBF1A100FA7F47 /* Beacon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Beacon.swift; path = ../Beacon.swift; sourceTree = "<group>"; };
+		1CCB4D6F1BEC048400FA7F47 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		1CD3DAED1BEA51510028282C /* ibacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ibacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CD3DAF01BEA51510028282C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CD3DAF21BEA51510028282C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1CD3DAF51BEA51510028282C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1CD3DAF71BEA51510028282C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1CD3DAFA1BEA51510028282C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1CD3DAFC1BEA51510028282C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CD3DB011BEA51510028282C /* ibaconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ibaconTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CD3DB051BEA51510028282C /* ibaconTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ibaconTests.swift; sourceTree = "<group>"; };
@@ -97,12 +107,17 @@
 		1CD3DAEF1BEA51510028282C /* ibacon */ = {
 			isa = PBXGroup;
 			children = (
+				1CCB4D6C1BEBF1A100FA7F47 /* Beacon.swift */,
+				1CCB4D671BEBED5500FA7F47 /* Main.storyboard */,
 				1CD3DAF01BEA51510028282C /* AppDelegate.swift */,
+				1CCB4D6E1BEC048400FA7F47 /* Model.xcdatamodeld */,
 				1CD3DAF21BEA51510028282C /* ViewController.swift */,
-				1CD3DAF41BEA51510028282C /* Main.storyboard */,
+				1CCB4D5E1BEB79AD00FA7F47 /* BeaconFinderTableViewController.swift */,
+				1CCB4D601BEBB71A00FA7F47 /* BeaconCounterViewController.swift */,
 				1CD3DAF71BEA51510028282C /* Assets.xcassets */,
-				1CD3DAF91BEA51510028282C /* LaunchScreen.storyboard */,
 				1CD3DAFC1BEA51510028282C /* Info.plist */,
+				1C8C583B1BEE31AD00A7CC60 /* AddUuidTableViewController.swift */,
+				1C8C583D1BEE426200A7CC60 /* EditBeaconTableViewController.swift */,
 			);
 			path = ibacon;
 			sourceTree = "<group>";
@@ -194,6 +209,11 @@
 					1CD3DAEC1BEA51500028282C = {
 						CreatedOnToolsVersion = 7.1;
 						DevelopmentTeam = 3SG9SH94HQ;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					1CD3DB001BEA51510028282C = {
 						CreatedOnToolsVersion = 7.1;
@@ -232,9 +252,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CD3DAFB1BEA51510028282C /* LaunchScreen.storyboard in Resources */,
 				1CD3DAF81BEA51510028282C /* Assets.xcassets in Resources */,
-				1CD3DAF61BEA51510028282C /* Main.storyboard in Resources */,
+				1CCB4D691BEBED5500FA7F47 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +278,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CCB4D5F1BEB79AD00FA7F47 /* BeaconFinderTableViewController.swift in Sources */,
+				1CCB4D611BEBB71A00FA7F47 /* BeaconCounterViewController.swift in Sources */,
+				1C8C583C1BEE31AD00A7CC60 /* AddUuidTableViewController.swift in Sources */,
 				1CD3DAF31BEA51510028282C /* ViewController.swift in Sources */,
+				1CCB4D701BEC048400FA7F47 /* Model.xcdatamodeld in Sources */,
 				1CD3DAF11BEA51510028282C /* AppDelegate.swift in Sources */,
+				1C8C583E1BEE426200A7CC60 /* EditBeaconTableViewController.swift in Sources */,
+				1CCB4D6D1BEBF1A100FA7F47 /* Beacon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,20 +321,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1CD3DAF41BEA51510028282C /* Main.storyboard */ = {
+		1CCB4D671BEBED5500FA7F47 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1CD3DAF51BEA51510028282C /* Base */,
+				1CCB4D681BEBED5500FA7F47 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1CD3DAF91BEA51510028282C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1CD3DAFA1BEA51510028282C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -487,6 +504,7 @@
 				1CD3DB171BEA51510028282C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1CD3DB181BEA51510028282C /* Build configuration list for PBXNativeTarget "ibaconTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +513,7 @@
 				1CD3DB1A1BEA51510028282C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1CD3DB1B1BEA51510028282C /* Build configuration list for PBXNativeTarget "ibaconUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,8 +522,22 @@
 				1CD3DB1D1BEA51510028282C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1CCB4D6E1BEC048400FA7F47 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1CCB4D6F1BEC048400FA7F47 /* Model.xcdatamodel */,
+			);
+			currentVersion = 1CCB4D6F1BEC048400FA7F47 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1CD3DAE51BEA51500028282C /* Project object */;
 }
