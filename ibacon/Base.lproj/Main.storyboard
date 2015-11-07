@@ -185,7 +185,7 @@
         <scene sceneID="d3N-eB-yJj">
             <objects>
                 <tableViewController id="ZCi-xB-RO7" customClass="EditBeaconTableViewController" customModule="ibacon" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="cB6-64-Ij7">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="cB6-64-Ij7">
                         <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
@@ -279,6 +279,26 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection headerTitle="Notifcations" id="I5V-HH-JRU">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="mCf-iw-If2">
+                                        <rect key="frame" x="0.0" y="430" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mCf-iw-If2" id="F7B-6m-iMV">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nnn-rT-zHi">
+                                                    <rect key="frame" x="8" y="6" width="51" height="31"/>
+                                                    <animations/>
+                                                </switch>
+                                            </subviews>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="ZCi-xB-RO7" id="AUP-Ip-TLi"/>
@@ -298,6 +318,7 @@
                         <outlet property="EnterPostParamsField" destination="nlZ-IM-IL9" id="x3v-2X-atC"/>
                         <outlet property="ExitPostParamsField" destination="hhw-07-n4p" id="fzV-Wd-dJ6"/>
                         <outlet property="NameField" destination="PEK-di-Nx8" id="kG9-1t-T04"/>
+                        <outlet property="NotificationSwitch" destination="nnn-rT-zHi" id="GN6-g6-cjO"/>
                         <outlet property="ServerUrlField" destination="glk-3v-eU4" id="bKZ-Bj-phq"/>
                     </connections>
                 </tableViewController>

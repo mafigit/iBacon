@@ -15,6 +15,8 @@ class EditBeaconTableViewController: UITableViewController {
     var beacon_uuid = ""
 
 
+   
+    @IBOutlet var NotificationSwitch: UISwitch!
     @IBOutlet var NameField: UITextField!
     @IBOutlet var ServerUrlField: UITextField!
     @IBOutlet var EnterPostParamsField: UITextField!
@@ -37,6 +39,8 @@ class EditBeaconTableViewController: UITableViewController {
         beacon.setValue(ExitPostParamsField.text, forKey: "postparamsexit")
 
         beacon.setValue(ServerUrlField.text, forKey: "serverurl")
+        beacon.setValue(NotificationSwitch.on, forKey: "notifications")
+
         
         
         do {
@@ -57,6 +61,8 @@ class EditBeaconTableViewController: UITableViewController {
         ServerUrlField.placeholder = "http://api.text.com:8080"
         EnterPostParamsField.placeholder = "id=123&region=enter"
         ExitPostParamsField.placeholder = "id=123&region=exit"
+        NotificationSwitch.on = false
+
         
         let uuid = self.beacon_uuid
         
@@ -66,6 +72,12 @@ class EditBeaconTableViewController: UITableViewController {
             EnterPostParamsField.text = String(existing_beacon!.valueForKey("postparamsenter")!)
             ExitPostParamsField.text = String(existing_beacon!.valueForKey("postparamsexit")!)
             ServerUrlField.text = String(existing_beacon!.valueForKey("serverurl")!)
+            
+            if(existing_beacon!.valueForKey("notifications") != nil) {
+               let notification_enable = Bool(existing_beacon!.valueForKey("notifications")! as! NSNumber)
+                NotificationSwitch.on = notification_enable
+            }
+            
         }
 
         // Uncomment the following line to preserve selection between presentations
@@ -87,7 +99,7 @@ class EditBeaconTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 4
+        return 5
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

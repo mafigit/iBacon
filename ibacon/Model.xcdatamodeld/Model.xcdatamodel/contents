@@ -2,6 +2,7 @@
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15A284" minimumToolsVersion="Xcode 7.0">
     <entity name="Beacon" syncable="YES">
         <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="notifications" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="postparamsenter" attributeType="String" syncable="YES"/>
         <attribute name="postparamsexit" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="serverurl" optional="YES" attributeType="String" syncable="YES"/>
@@ -11,7 +12,7 @@
         <attribute name="uuid" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Beacon" positionX="18" positionY="72" width="128" height="120"/>
+        <element name="Beacon" positionX="18" positionY="72" width="128" height="135"/>
         <element name="NewBeacon" positionX="-27" positionY="18" width="128" height="58"/>
     </elements>
 </model>

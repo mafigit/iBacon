@@ -197,8 +197,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
             let server_url = String(beacon!.valueForKey("serverurl")!)
             let post_params = String(beacon!.valueForKey("postparamsenter")!)
             
-            sendLocalNotificationWithMessage("You entered the region")
             sendPostRequest(server_url, postparams: post_params);
+
+            if(beacon!.valueForKey("notifications") != nil) {
+                let notification_enable = Bool(beacon!.valueForKey("notifications")! as! NSNumber)
+
+                if notification_enable {
+                    sendLocalNotificationWithMessage("You entered the region")
+                }
+
+            }
         }
     }
     
@@ -209,9 +217,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         if(beacon != nil) {
             let server_url = String(beacon!.valueForKey("serverurl")!)
             let post_params = String(beacon!.valueForKey("postparamsexit")!)
-            
-            sendLocalNotificationWithMessage("You exited the region")
             sendPostRequest(server_url, postparams: post_params);
+
+            if(beacon!.valueForKey("notifications") != nil) {
+                let notification_enable = Bool(beacon!.valueForKey("notifications")! as! NSNumber)
+                if notification_enable {
+                    sendLocalNotificationWithMessage("You exited the region")
+
+                }
+                
+            }
+
         }
 
     }
