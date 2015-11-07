@@ -148,43 +148,42 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     }
     
     func locationManager(manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], inRegion region: CLBeaconRegion) {
-        var message:String = ""
+        //var message:String = ""
         var nearestBeacon = CLBeacon()
         
         if(beacons.count > 0) {
-          nearestBeacon = beacons[0] as CLBeacon
+            nearestBeacon = beacons[0] as CLBeacon
         }
         addToVisibleBeacons(nearestBeacon, region: region)
-
         
-       
+        
+        
         if (self.beaconCounterView != nil) {
-          self.beaconCounterView!.updateBeaconCounter()
+            self.beaconCounterView!.updateBeaconCounter()
         }
         
         if(beacons.count > 0) {
             
             let nearestBeacon:CLBeacon = beacons[0] as CLBeacon
-
+            
             if(nearestBeacon.proximity == lastProximity ||
                 nearestBeacon.proximity == CLProximity.Unknown) {
                     return;
             }
             lastProximity = nearestBeacon.proximity;
             
-            switch nearestBeacon.proximity {
-            case CLProximity.Far:
-                message = "You are far away from the beacon"
-            case CLProximity.Near:
-                message = "You are near the beacon"
-            case CLProximity.Immediate:
-                message = "You are in the immediate proximity of the beacon"
-                sendLocalNotificationWithMessage("Very close");
-            case CLProximity.Unknown:
-                return
-            }
+            // switch nearestBeacon.proximity {
+            // case CLProximity.Far:
+            //     message = "You are far away from the beacon"
+            // case CLProximity.Near:
+            //     message = "You are near the beacon"
+            // case CLProximity.Immediate:
+            //     message = "You are in the immediate proximity of the beacon"
+            // case CLProximity.Unknown:
+            //     return
+            // }
         } else {
-            message = "No beacons are nearby"
+            // message = "No beacons are nearby"
         }
         
     }
