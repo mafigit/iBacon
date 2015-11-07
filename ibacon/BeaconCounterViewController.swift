@@ -10,6 +10,9 @@ import UIKit
 
 class BeaconCounterViewController: UIViewController {
     let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate;
+    var beaconFinderTableView: BeaconFinderTableViewController!
+    var ViewCounter = 0
+
     
     @IBOutlet weak var BeaconCounter: UILabel!
     override func viewDidLoad() {
@@ -34,8 +37,11 @@ class BeaconCounterViewController: UIViewController {
               visible_beacons.append(beacon)
             }
         }
-       
-        BeaconCounter.text = String(visible_beacons.count)
+        if ViewCounter != visible_beacons.count {
+            BeaconCounter.text = String(visible_beacons.count)
+
+        }
+        ViewCounter = visible_beacons.count
       
     }
     

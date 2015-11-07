@@ -158,18 +158,22 @@ class BeaconFinderTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+ 
+    
     override func prepareForSegue(segue:(UIStoryboardSegue!), sender:AnyObject!) {
         if (segue.destinationViewController is EditBeaconTableViewController) {
-        let editBeaconViewController = ((segue.destinationViewController) as! EditBeaconTableViewController)
-        let indexPath = self.tableView.indexPathForSelectedRow!
+            let editBeaconViewController = ((segue.destinationViewController) as! EditBeaconTableViewController)
+            let indexPath = self.tableView.indexPathForSelectedRow!
             var visible_beacons = [VisibleBeacon]()
             for beacon in appDelegate.Beacons {
                 if (!beacon.beacon.proximityUUID.UUIDString.isEmpty) {
                     visible_beacons.append(beacon)
                 }
             }
-        let selected_beacon = visible_beacons[indexPath.row]
-        editBeaconViewController.beacon_uuid = selected_beacon.beacon.proximityUUID.UUIDString
+            if visible_beacons.count > 0 {
+              let selected_beacon = visible_beacons[indexPath.row]
+              editBeaconViewController.beacon_uuid = selected_beacon.beacon.proximityUUID.UUIDString
+            }
         }
     }
   
