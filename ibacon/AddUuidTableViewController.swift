@@ -9,9 +9,43 @@
 import UIKit
 import CoreData
 import QuartzCore
+import AVFoundation
+import QRCodeReader
 
 class AddUuidTableViewController: UITableViewController {
     let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+    lazy var reader = QRCodeReaderViewController(metadataObjectTypes: [AVMetadataObjectTypeQRCode])
+    
+    @IBAction func ScanQrButton(sender: AnyObject) {
+        // Retrieve the QRCode content
+        // By using the delegate pattern
+        ///reader.delegate = self
+        
+        // Or by using the closure pattern
+        reader.completionBlock = { (result: String?) in
+            
+            print(result)
+            if result != nil {
+                self.UuidField.text = result
+            }
+            self.dismissViewControllerAnimated(true, completion: nil)
+
+        }
+        
+        // Presents the reader as modal form sheet
+        reader.modalPresentationStyle = .FormSheet
+        presentViewController(reader, animated: true, completion: nil)
+    }
+    
+    // MARK: - QRCodeReader Delegate Methods
+    
+    func reader(reader: QRCodeReader, didScanResult result: String) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func readerDidCancel(reader: QRCodeReader) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
 
 
     @IBOutlet var NavigationTitle: UINavigationItem!

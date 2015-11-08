@@ -86,6 +86,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="DrE-Ch-MFO">
+                            <rect key="frame" x="0.0" y="112" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMD-X2-oji">
+                                    <rect key="frame" x="226" y="5" width="148" height="33"/>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="148" id="Dc1-zL-OVn"/>
+                                    </constraints>
+                                    <state key="normal" title="Scan QR Code"/>
+                                    <connections>
+                                        <action selector="ScanQrButton:" destination="ZLm-dL-aE8" eventType="touchUpInside" id="oSl-gE-70k"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="vMD-X2-oji" firstAttribute="centerY" secondItem="DrE-Ch-MFO" secondAttribute="centerY" id="1mJ-5b-DAk"/>
+                                <constraint firstItem="vMD-X2-oji" firstAttribute="centerX" secondItem="DrE-Ch-MFO" secondAttribute="centerX" id="j7m-ru-Pip"/>
+                                <constraint firstItem="vMD-X2-oji" firstAttribute="top" secondItem="DrE-Ch-MFO" secondAttribute="top" constant="5" id="oxo-X2-Dd4"/>
+                            </constraints>
+                        </view>
                         <sections>
                             <tableViewSection headerTitle="UUID" id="Wik-t8-ylE">
                                 <cells>

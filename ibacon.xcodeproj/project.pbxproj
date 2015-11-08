@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C71323F1BEEC9820062700E /* QRCodeReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C71323E1BEEC9820062700E /* QRCodeReader.framework */; };
+		1C7132491BEECCDB0062700E /* QRCodeReader.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C7132481BEECCDB0062700E /* QRCodeReader.framework.dSYM */; };
 		1C8C583C1BEE31AD00A7CC60 /* AddUuidTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C583B1BEE31AD00A7CC60 /* AddUuidTableViewController.swift */; };
 		1C8C583E1BEE426200A7CC60 /* EditBeaconTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C583D1BEE426200A7CC60 /* EditBeaconTableViewController.swift */; };
 		1CCB4D5F1BEB79AD00FA7F47 /* BeaconFinderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCB4D5E1BEB79AD00FA7F47 /* BeaconFinderTableViewController.swift */; };
@@ -38,7 +40,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1C7132471BEECCB30062700E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				1C7132491BEECCDB0062700E /* QRCodeReader.framework.dSYM in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1C71323E1BEEC9820062700E /* QRCodeReader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QRCodeReader.framework; path = Carthage/Build/iOS/QRCodeReader.framework; sourceTree = "<group>"; };
+		1C7132411BEECBB90062700E /* 495E125E-B85B-3583-A249-7287DB5E3DBE.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "495E125E-B85B-3583-A249-7287DB5E3DBE.bcsymbolmap"; path = "Carthage/Build/iOS/495E125E-B85B-3583-A249-7287DB5E3DBE.bcsymbolmap"; sourceTree = "<group>"; };
+		1C7132431BEECBBC0062700E /* D0513C46-37D2-3B26-9859-4076C97AC28B.bcsymbolmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = "D0513C46-37D2-3B26-9859-4076C97AC28B.bcsymbolmap"; path = "Carthage/Build/iOS/D0513C46-37D2-3B26-9859-4076C97AC28B.bcsymbolmap"; sourceTree = "<group>"; };
+		1C7132451BEECBBE0062700E /* QRCodeReader.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = QRCodeReader.framework.dSYM; path = Carthage/Build/iOS/QRCodeReader.framework.dSYM; sourceTree = "<group>"; };
+		1C7132481BEECCDB0062700E /* QRCodeReader.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = QRCodeReader.framework.dSYM; path = Carthage/Build/iOS/QRCodeReader.framework.dSYM; sourceTree = "<group>"; };
 		1C8C583B1BEE31AD00A7CC60 /* AddUuidTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUuidTableViewController.swift; sourceTree = "<group>"; };
 		1C8C583D1BEE426200A7CC60 /* EditBeaconTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditBeaconTableViewController.swift; sourceTree = "<group>"; };
 		1CCB4D5E1BEB79AD00FA7F47 /* BeaconFinderTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconFinderTableViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C71323F1BEEC9820062700E /* QRCodeReader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +108,11 @@
 		1CD3DAE41BEA51500028282C = {
 			isa = PBXGroup;
 			children = (
+				1C7132481BEECCDB0062700E /* QRCodeReader.framework.dSYM */,
+				1C7132451BEECBBE0062700E /* QRCodeReader.framework.dSYM */,
+				1C7132431BEECBBC0062700E /* D0513C46-37D2-3B26-9859-4076C97AC28B.bcsymbolmap */,
+				1C7132411BEECBB90062700E /* 495E125E-B85B-3583-A249-7287DB5E3DBE.bcsymbolmap */,
+				1C71323E1BEEC9820062700E /* QRCodeReader.framework */,
 				1CD3DAEF1BEA51510028282C /* ibacon */,
 				1CD3DB041BEA51510028282C /* ibaconTests */,
 				1CD3DB0F1BEA51510028282C /* ibaconUITests */,
@@ -150,6 +176,8 @@
 				1CD3DAE91BEA51500028282C /* Sources */,
 				1CD3DAEA1BEA51500028282C /* Frameworks */,
 				1CD3DAEB1BEA51500028282C /* Resources */,
+				1C7132401BEEC9AE0062700E /* Run Script */,
+				1C7132471BEECCB30062700E /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -272,6 +300,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C7132401BEEC9AE0062700E /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/QRCodeReader.framework",
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1CD3DAE91BEA51500028282C /* Sources */ = {
@@ -419,6 +466,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ibacon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.inagile.ibacon;
@@ -430,6 +481,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ibacon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.inagile.ibacon;
