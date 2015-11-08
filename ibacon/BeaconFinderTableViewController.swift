@@ -46,28 +46,6 @@ class BeaconFinderTableViewController: UITableViewController {
         super.viewWillAppear(animated)
         self.tableView.reloadData()
 
-        let managedContext = appDelegate.managedObjectContext
-
-        
-        
-        let fetchRequestNewBeacon = NSFetchRequest(entityName: "NewBeacon")
-
-        
-        //3
-        do {
-            let resultsNewBeacons = try managedContext.executeFetchRequest(fetchRequestNewBeacon)
-            let new_beacons = resultsNewBeacons as! [NSManagedObject]
-            
-            for new_beacon in new_beacons {
-                
-                let uuid: String = String(new_beacon.valueForKey("uuid")!);
-                
-                appDelegate.addNewBeacon(uuid, beaconIdentifier: uuid)
-                
-            }
-        } catch let error as NSError {
-            print("Could not fetch \(error), \(error.userInfo)")
-        }
     }
 
     // MARK: - Table view data source
@@ -107,7 +85,6 @@ class BeaconFinderTableViewController: UITableViewController {
         if (last_save_beacon_with_uuid.last != nil) {
             label_text = String(last_save_beacon_with_uuid.last!.valueForKey("name")!)
         }
-
 
         cell.textLabel!.text = label_text
         return cell

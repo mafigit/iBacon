@@ -30,6 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
             if(locationManager!.respondsToSelector("requestAlwaysAuthorization")) {
                 locationManager!.requestAlwaysAuthorization()
             }
+            locationManager!.desiredAccuracy = kCLLocationAccuracyThreeKilometers
             locationManager!.allowsBackgroundLocationUpdates = true
             locationManager!.delegate = self
             locationManager!.pausesLocationUpdatesAutomatically = true
@@ -73,11 +74,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     }
 
     func applicationDidEnterBackground(application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-      
-        NSLog("App is backgrounded")
-
+      locationManager!.stopUpdatingLocation()
     }
 
     func applicationWillEnterForeground(application: UIApplication) {
@@ -85,7 +82,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     }
 
     func applicationDidBecomeActive(application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        
+        let managedContext = managedObjectContext
+        let fetchRequestNewBeacon = NSFetchRequest(entityName: "NewBeacon")
+        do {
+            let resultsNewBeacons = try managedContext.executeFetchRequest(fetchRequestNewBeacon)
+            let new_beacons = resultsNewBeacons as! [NSManagedObject]
+            
+            for new_beacon in new_beacons {
+                let uuid: String = String(new_beacon.valueForKey("uuid")!);
+                addNewBeacon(uuid, beaconIdentifier: uuid)
+            }
+        } catch let error as NSError {
+            print("Could not fetch \(error), \(error.userInfo)")
+        }
     }
 
     func applicationWillTerminate(application: UIApplication) {

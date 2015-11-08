@@ -24,7 +24,6 @@ class AddUuidTableViewController: UITableViewController {
         // Or by using the closure pattern
         reader.completionBlock = { (result: String?) in
             
-            print(result)
             if result != nil {
                 self.UuidField.text = result
             }
@@ -99,7 +98,8 @@ class AddUuidTableViewController: UITableViewController {
         return 1
     }
     
-    func addNewNewBeacon(uuid: String) {
+    func addNewNewBeacon(var uuid: String) {
+        uuid = uuid.uppercaseString
         if (appDelegate.getNewBeaconByUuid(uuid).count > 0)  {
             addErrorToTextfield(UuidField, message: "Beacon already added!")
             
